@@ -7,7 +7,7 @@ import toastify from './vendor/toastify';
 
 export default css`
   :global() {
-    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
 
     ${toastify};
 

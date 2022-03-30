@@ -11,5 +11,5 @@ export const Wrapper = styled.div`
   color: var(${COLOR.TEXT});
   background: var(${COLOR.BG});
   box-shadow: var(${SHADOW.MEDIUM});
-  border-radius: 4px;
+  border-radius: 5px;
 `;

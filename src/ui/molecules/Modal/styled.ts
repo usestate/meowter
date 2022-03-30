@@ -32,11 +32,10 @@ export const Overlay = styled.div`
   height: 100%;
 
   overflow: auto;
-  background: rgba(var(${COLOR.TEXT_RGB}), 0.35);
+  background: rgba(var(${COLOR.TEXT_RGB}), 0.3);
 `;
 
 export const Wrapper = styled.div<{ maxWidth: number }>`
   margin: auto;
-  width: 100%;
   max-width: ${p => p.maxWidth}px;
 `;

@@ -36,6 +36,7 @@ const Dialog: React.FC<DialogProps> = ({
 
   // Catch focus inside the dialog
   React.useEffect(() => {
+    // @ts-ignore
     const getFocusableElements = () => {
       if (dialogRef.current) {
         return dialogRef.current.querySelectorAll(

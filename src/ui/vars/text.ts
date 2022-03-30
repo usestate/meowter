@@ -3,14 +3,14 @@ export const MAIN_FONT_FAMILY = `
 `;
 
 const H1 = `
-  font-weight: normal;
+  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
 `;
 
 const H2 = `
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 22px;
   line-height: 28px;
 `;
 

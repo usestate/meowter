@@ -23,7 +23,7 @@ const Modal: React.FC<ModalProps> = props => {
     opened = false,
     nested = false,
     closeOnOverlayClick = true,
-    maxWidth = 722,
+    maxWidth = 350,
     onClose,
     className,
     noDialog,

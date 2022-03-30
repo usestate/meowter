@@ -3,14 +3,12 @@ import { styled } from '@linaria/react';
 import { MEDIA, TEXT } from 'ui/vars';
 
 export const Wrapper = styled.div`
-  padding: 16px 20px;
+  padding: 25px 10px;
   overflow: auto;
   max-height: 65vh;
 
-  ${TEXT.NORMAL};
-
   @media (min-width: ${MEDIA.DESKTOP_1}) {
-    padding: 16px 24px;
+    padding: 25px 10px;
   }
 
   &[data-no-scroll] {
