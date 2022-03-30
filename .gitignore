@@ -24,3 +24,12 @@ yarn-error.log*
 
 .idea
 .vscode
+
+.linaria-cache
+public/build
+public/config.json
+public/index.html
+src/locales/_build/
+src/locales/**/*.js
+
+dist

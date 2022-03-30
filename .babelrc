@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    "@babel/preset-typescript",
+    "@lingui/babel-preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties",
+    "macros"
+  ],
+  "env": {
+    "development": {
+      "presets": ["@linaria/babel-preset"]
+    }
+  }
+}

@@ -1,4 +1,27 @@
 {
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {}
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "esnext",
+    "jsx": "preserve",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["webworker", "DOM"],
+    "paths": {
+      "assets/*": ["assets/*"],
+      "features/*": ["components/*"],
+      "core/*": ["core/*"],
+      "lib/*": ["lib/*"],
+      "screens/*": ["screens/*"],
+      "locales/*": ["locales/*"],
+      "ui/*": ["ui/*"],
+      "types/*": ["types/*"],
+      "utils/*": ["utils/*"]
+    },
+    "typeRoots": ["./types", "./node_modules/@types"]
+  }
 }

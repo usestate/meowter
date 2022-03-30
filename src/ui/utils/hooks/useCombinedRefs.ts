@@ -1,0 +1,20 @@
+import * as React from 'react';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default (...refs: any[]): React.MutableRefObject<any> => {
+  const targetRef = React.useRef();
+
+  React.useEffect(() => {
+    refs.forEach(ref => {
+      if (!ref) return;
+
+      if (typeof ref === 'function') {
+        ref(targetRef.current);
+      } else {
+        ref.current = targetRef.current;
+      }
+    });
+  }, [refs]);
+
+  return targetRef;
+};

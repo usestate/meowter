@@ -1,6 +1,6 @@
-import { CoreRoute } from '@lib/routing'
+import { CoreRoute } from 'lib/routing'
 
-import { Feed } from './Feed'
+import { Feed } from 'screens/Feed'
 
 export enum ROUTES {
   feed = '/feed',
