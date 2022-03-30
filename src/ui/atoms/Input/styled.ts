@@ -33,7 +33,7 @@ export const GroupControl = styled.div`
   align-items: center;
   padding: 0 20px;
 
-  border: 1px solid var(${COLOR.SECONDARY});
+  border: 1px solid rgba(var(${COLOR.SECONDARY_RGB}), 0.1);
   border-radius: 1e+07px;
   background: var(${COLOR.BG});
   transition: 0.2s ease-in-out;
@@ -128,6 +128,7 @@ const controlStyle = `
 
   ${TEXT.MAIN_FONT_FAMILY};
   ${TEXT.SMALL};
+
   color: var(${COLOR.TEXT});
   background: transparent;
 
@@ -138,7 +139,7 @@ const controlStyle = `
   }
 
   &::placeholder {
-    color: var(${COLOR.PRIMARY_LIGHT});
+    color: rgba(var(${COLOR.SECONDARY_RGB}), 0.3);
   }
 
   &:-webkit-autofill,
