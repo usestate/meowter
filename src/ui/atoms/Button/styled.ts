@@ -21,13 +21,13 @@ const hoverStyles = `
 `;
 
 const activeStyles = `
-  background: var(${COLOR.ACCENT_DARK});
-  color: rgba(var(${COLOR.BG}), 0.5);
+  background: var(${COLOR.ACCENT_ACTIVE});
+  color: var(${COLOR.BG});
   border-color: transparent;
 `;
 
 const disabledStyles = `
-  background: var(${COLOR.SECONDARY});
+  background: rgba(var(${COLOR.ACCENT_RGB}), 0.3);
   color: var(${COLOR.BG});
   border-color: transparent;
   cursor: not-allowed;
@@ -146,7 +146,7 @@ export const Wrapper = styled.button`
 
   border: none;
   background: transparent;
-  border-radius: 4px;
+  border-radius: 1e+07px;
   box-sizing: border-box;
   line-height: normal;
   outline: none;
@@ -155,12 +155,12 @@ export const Wrapper = styled.button`
   transition: var(${TRANSITION.NORMAL});
 
   &[data-size='${SIZES.sm}'] {
-    height: 32px;
-    ${TEXT.SMALL_MEDIUM};
+    height: 40px;
+    ${TEXT.SMALL};
   }
 
   &[data-size='${SIZES.md}'] {
-    height: 40px;
+    height: 50px;
     ${TEXT.MEDIUM};
   }
 
@@ -178,6 +178,7 @@ export const Wrapper = styled.button`
 
   &[data-variant='${VARIANTS.secondary}'] {
     ${secondary};
+    ${TEXT.NORMAL};
   }
 `;
 

@@ -5,8 +5,8 @@ export default {
   ACCENT_DARK: '--color-accent-dark',
   ACCENT_DARK_RGB: '--color-accent-dark-rgb',
 
-  ACCENT_LIGHT: '--color-accent-light',
-  ACCENT_LIGHT_RGB: '--color-accent-light-rgb',
+  ACCENT_ACTIVE: '--color-accent-active',
+  ACCENT_ACTIVE_RGB: '--color-accent-active-rgb',
 
   BG: '--color-bg',
   BG_RGB: '--color-bg-rgb',

@@ -31,10 +31,10 @@ export const GroupControl = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 20px;
 
   border: 1px solid var(${COLOR.SECONDARY});
-  border-radius: 4px;
+  border-radius: 1e+07px;
   background: var(${COLOR.BG});
   transition: 0.2s ease-in-out;
   transition-property: border, background;
@@ -63,7 +63,7 @@ export const GroupControl = styled.div`
 
   &[data-size='${SIZES.md}'] {
     min-height: auto;
-    height: 40px;
+    height: 50px;
 
     input,
     textarea {
@@ -99,6 +99,7 @@ export const GroupControl = styled.div`
 
   &[data-error] {
     border-color: var(${COLOR.ERROR});
+    color: var(${COLOR.ERROR});
   }
 
   &[data-disabled] {
@@ -109,12 +110,11 @@ export const GroupControl = styled.div`
 
 export const Hint = styled(_Hint)`
   position: absolute;
-  left: 0;
-  bottom: -20px;
-  height: 15px;
-  margin-top: 8px;
-
-  width: 100%;
+  width: auto;
+  bottom: 40px;
+  left: 25=0px;
+  padding: 0 2px;
+  background: #FFF;
 `;
 
 const controlStyle = `
@@ -127,7 +127,7 @@ const controlStyle = `
   box-sizing: border-box;
 
   ${TEXT.MAIN_FONT_FAMILY};
-  ${TEXT.NORMAL};
+  ${TEXT.SMALL};
   color: var(${COLOR.TEXT});
   background: transparent;
 
@@ -181,7 +181,7 @@ export const RightActions = styled.div`
 export const Label = styled.p`
   display: block;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 
   pointer-events: none;
   white-space: nowrap;
@@ -190,5 +190,5 @@ export const Label = styled.p`
 
   ${TEXT.SMALL_MEDIUM};
 
-  color: var(${COLOR.PRIMARY_MEDIUM});
+  color: var(${COLOR.TEXT});
 `;

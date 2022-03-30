@@ -7,7 +7,7 @@ import toastify from './vendor/toastify';
 
 export default css`
   :global() {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
     ${toastify};
 
@@ -45,7 +45,7 @@ export default css`
     body,
     button,
     input {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Rubik', sans-serif;
       ${TEXT.NORMAL};
       color: var(${COLOR.TEXT});
     }

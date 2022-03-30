@@ -106,7 +106,7 @@ export const IconWrapper = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background: var(${COLOR.ACCENT_LIGHT});
+    background: var(${COLOR.ACCENT_DARK});
 
     &[data-primary] {
       background: var(${COLOR.SECONDARY});

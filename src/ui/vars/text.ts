@@ -1,5 +1,5 @@
 export const MAIN_FONT_FAMILY = `
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
 `;
 
 const H1 = `
@@ -16,25 +16,25 @@ const H2 = `
 
 const NORMAL = `
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 `;
 
 const MEDIUM = `
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 `;
 
 const SMALL = `
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
 `;
 
 const SMALL_MEDIUM = `
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
 `;
 
