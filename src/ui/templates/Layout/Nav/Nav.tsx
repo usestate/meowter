@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { User, Edit, Settings, Home } from 'ui/icons/24'
+import { User, Pencil, Settings, Home } from 'ui/icons/24'
 import { InteractiveIcon } from 'ui/atoms'
 
 import * as S from './styled'
@@ -12,7 +12,7 @@ export const Nav: FC<Props> = () => {
     <S.Container>
       <InteractiveIcon icon={Home} />
       <InteractiveIcon icon={User} />
-      <InteractiveIcon icon={Edit} />
+      <InteractiveIcon icon={Pencil} />
       <InteractiveIcon icon={Settings} />
     </S.Container>
   )
