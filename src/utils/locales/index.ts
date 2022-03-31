@@ -1,1 +1,1 @@
-export * from './LocalesContext';
+export * from './LocalesContext'

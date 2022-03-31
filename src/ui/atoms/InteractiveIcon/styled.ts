@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, TRANSITION, HELPER } from 'ui/vars';
+import { COLOR, TRANSITION, HELPER } from 'ui/vars'
 
 export const IconContainer = styled.button<{ size?: number }>`
   display: flex;
@@ -38,7 +38,7 @@ export const IconContainer = styled.button<{ size?: number }>`
     flex-shrink: 0;
     fill: currentColor;
   }
-`;
+`
 
 export const WrapperForTooltip = styled.div`
   width: 100%;
@@ -46,4 +46,4 @@ export const WrapperForTooltip = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
+`

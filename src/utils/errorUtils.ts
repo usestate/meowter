@@ -1,4 +1,4 @@
-import type { AxiosError } from 'axios';
+import type { AxiosError } from 'axios'
 
 export const ERROR_CODES = {
   // validation codes
@@ -51,34 +51,34 @@ export const ERROR_CODES = {
   // other
   INTERNAL_SERVER_ERROR: 'INTERNAL_SERVER_ERROR',
   BAD_REQUEST: 'BAD_REQUEST',
-  VALIDATION_ERROR: 'VALIDATION_ERROR',
-};
+  VALIDATION_ERROR: 'VALIDATION_ERROR'
+}
 
 export interface Error {
-  col?: string[];
-  msg?: string;
-  code: string;
+  col?: string[]
+  msg?: string
+  code: string
   params?: {
-    actualtag?: string;
-    namespace?: string;
-    param?: string;
-    type?: string;
-    value?: string;
-  };
+    actualtag?: string
+    namespace?: string
+    param?: string
+    type?: string
+    value?: string
+  }
 }
 
 export interface ErrorData {
-  errors?: Error[];
+  errors?: Error[]
 }
 
 export const getError = ({ err }: { err: AxiosError }): Error => {
-  const { data }: { data: ErrorData } = err.response || { data: undefined };
+  const { data }: { data: ErrorData } = err.response || { data: undefined }
 
-  return data?.errors?.[0];
-};
+  return data?.errors?.[0]
+}
 
 export const getRenderError = (err: AxiosError) => {
   if (err?.response?.status && err?.response?.status !== 401) {
-    throw err.response.status;
+    throw err.response.status
   }
-};
+}

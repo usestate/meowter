@@ -1,1 +1,1 @@
-export { default as modifiers } from './modifiers';
+export { default as modifiers } from './modifiers'

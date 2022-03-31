@@ -1,14 +1,14 @@
 declare module 'config' {
   interface Config {
     api: {
-      protocol: 'http' | 'https';
-      host: string;
-    };
+      protocol: 'http' | 'https'
+      host: string
+    }
     socket: {
-      protocol: 'ws' | 'wss';
-      host: string;
-    };
+      protocol: 'ws' | 'wss'
+      host: string
+    }
   }
 
-  export = config as Config;
+  export = config as Config
 }

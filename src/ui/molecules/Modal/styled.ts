@@ -1,7 +1,7 @@
-import { styled } from '@linaria/react';
-import { css } from '@linaria/core';
+import { styled } from '@linaria/react'
+import { css } from '@linaria/core'
 
-import { COLOR } from 'ui/vars';
+import { COLOR } from 'ui/vars'
 
 export const transitionClass = css`
   &-enter {
@@ -18,7 +18,7 @@ export const transitionClass = css`
     opacity: 0;
     transition: opacity 0.2s;
   }
-`;
+`
 
 export const Overlay = styled.div`
   top: 0;
@@ -33,9 +33,9 @@ export const Overlay = styled.div`
 
   overflow: auto;
   background: rgba(var(${COLOR.TEXT_RGB}), 0.3);
-`;
+`
 
 export const Wrapper = styled.div<{ maxWidth: number }>`
   margin: auto;
   max-width: ${p => p.maxWidth}px;
-`;
+`

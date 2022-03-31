@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, TEXT } from 'ui/vars';
+import { COLOR, TEXT } from 'ui/vars'
 
 export const colors = [
   '#EF6C00',
@@ -18,13 +18,13 @@ export const colors = [
   '#CDDC39',
   '#FFEB3B',
   '#FFC107',
-  '#FF5722',
-];
+  '#FF5722'
+]
 
 export const Wrapper = styled.div<{
-  borderSize: number;
-  background: string;
-  size: number;
+  borderSize: number
+  background: string
+  size: number
 }>`
   position: relative;
   border-radius: 50%;
@@ -36,7 +36,7 @@ export const Wrapper = styled.div<{
   display: flex;
 
   border: ${p => p.borderSize}px solid var(${COLOR.BG});
-`;
+`
 
 export const Image = styled.img`
   position: absolute;
@@ -46,7 +46,7 @@ export const Image = styled.img`
   width: 100%;
   min-width: 100%;
   object-fit: cover; // for avatars with different height and width
-`;
+`
 
 export const Initials = styled.p`
   margin: auto;
@@ -54,4 +54,4 @@ export const Initials = styled.p`
   ${TEXT.NORMAL};
   text-align: center;
   color: var(${COLOR.BG});
-`;
+`

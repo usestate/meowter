@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { alert } from 'ui/alert'
 import { Button, Input } from 'ui/atoms'
 import { Modal } from 'ui/molecules'
+import { Layout } from 'ui/templates/Layout'
 
 import { Wrapper, Content, Title, Description } from './styled'
 
@@ -14,37 +15,40 @@ export const Feed = () => {
 
   return (
     <>
-      <Helmet title='Feed' />
+      <Layout>
+        <Helmet title='Feed' />
 
-      <Wrapper>
-        <Button onClick={sayHi}>Click!</Button>
-        <Button variant='secondary' onClick={() => setShown(!isShown)}>
-          Modal!
-        </Button>
-        <Button disabled onClick={sayHi}>
-          No Click...
-        </Button>
+        <Layout.Header title='Лента' />
 
-        <Input placeholder='Почта или телефон' />
-        <Input value='Почта или телефон' />
-        <Input placeholder='Почта или телефон' disabled />
-        <Input label='Имя' />
-        <Input error value='hellogolyanov@go.g' helperText='Неправильный логин' />
+        <Layout.Content>
+          <Wrapper>
+            <Button variant='secondary' onClick={() => setShown(!isShown)}>
+              Modal!
+            </Button>
+            <Button disabled onClick={sayHi}>
+              No Click...
+            </Button>
 
-        <Modal
-          hideCloseBtn
-          opened={isShown}
-          onClose={() => setShown(false)}
-          actions={[{ key: 1, title: 'Ага, я понял', onClick: () => setShown(false) }]}
-        >
-          <Content>
-            <Title>Как пользоваться приложением</Title>
-            <Description>
-              Выдели одно слово, и на его основе определится тема и составится лента
-            </Description>
-          </Content>
-        </Modal>
-      </Wrapper>
+            <Input error value='hellogolyanov@go.g' helperText='Неправильный логин' />
+          </Wrapper>
+        </Layout.Content>
+
+        <Layout.Nav />
+      </Layout>
+
+      <Modal
+        hideCloseBtn
+        opened={isShown}
+        onClose={() => setShown(false)}
+        actions={[{ key: 1, title: 'Ага, я понял', onClick: () => setShown(false) }]}
+      >
+        <Content>
+          <Title>Как пользоваться приложением</Title>
+          <Description>
+            Выдели одно слово, и на его основе определится тема и составится лента
+          </Description>
+        </Content>
+      </Modal>
     </>
   )
 }

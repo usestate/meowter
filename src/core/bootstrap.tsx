@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 
 import { Root } from './components'
 
-(async () => {
+;(async () => {
   render(<Root />, document.getElementById('root'))
 })()
 

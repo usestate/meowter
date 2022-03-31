@@ -1,11 +1,11 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, TRANSITION, HELPER, TEXT } from 'ui/vars';
+import { COLOR, TRANSITION, HELPER, TEXT } from 'ui/vars'
 
 export const SIZES = {
   sm: 'sm',
-  md: 'md',
-};
+  md: 'md'
+}
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -76,7 +76,7 @@ export const Wrapper = styled.div`
       padding: 10px 24px;
     }
   }
-`;
+`
 
 export const Container = styled.button`
   color: inherit;
@@ -84,7 +84,7 @@ export const Container = styled.button`
   &[data-no-padding] {
     padding: 0;
   }
-`;
+`
 
 export const Title = styled.p`
   margin: 0;
@@ -93,7 +93,7 @@ export const Title = styled.p`
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-`;
+`
 
 export const IconWrapper = styled.div`
   display: flex;
@@ -123,4 +123,4 @@ export const IconWrapper = styled.div`
       fill: var(${COLOR.ACCENT});
     }
   }
-`;
+`

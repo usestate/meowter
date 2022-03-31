@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { MEDIA, COLOR } from 'ui/vars';
+import { MEDIA, COLOR } from 'ui/vars'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -21,4 +21,4 @@ export const Wrapper = styled.div`
   @media (min-width: ${MEDIA.DESKTOP_1}) {
     padding: 24px;
   }
-`;
+`

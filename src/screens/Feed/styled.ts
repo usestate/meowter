@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
 import { COLOR, TEXT } from 'ui/vars'
 
@@ -6,10 +6,11 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  
+
+  min-height: 1000px;
+
   padding: 25px;
-  
+
   button {
     width: 290px;
     margin: 0 0 15px 0;
@@ -31,7 +32,7 @@ export const Title = styled.div`
   margin: 0 0 10px 0;
 
   ${TEXT.H2};
-  
+
   font-weight: 700;
   text-align: center;
 `

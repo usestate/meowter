@@ -1,3 +1,3 @@
 export default {
-  NORMAL: '--transition-normal',
-};
+  NORMAL: '--transition-normal'
+}

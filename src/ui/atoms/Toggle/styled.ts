@@ -1,7 +1,7 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { Check as CheckedIcon } from 'ui/icons/16';
-import { COLOR, TEXT, TRANSITION, SHADOW } from 'ui/vars';
+import { Check as CheckedIcon } from 'ui/icons/16'
+import { COLOR, TEXT, TRANSITION, SHADOW } from 'ui/vars'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
   color: var(${COLOR.TEXT});
   ${TEXT.MEDIUM};
-`;
+`
 
 export const Checked = styled(CheckedIcon)`
   position: absolute;
@@ -24,7 +24,7 @@ export const Checked = styled(CheckedIcon)`
   &[data-checked] {
     opacity: 1;
   }
-`;
+`
 
 const commonIndicatorStyles = `
   position: relative;
@@ -32,7 +32,7 @@ const commonIndicatorStyles = `
   flex-shrink: 0;
 
   transition: var(${TRANSITION.NORMAL});
-`;
+`
 
 export const Square = styled.div`
   ${commonIndicatorStyles};
@@ -48,7 +48,7 @@ export const Square = styled.div`
     background: rgba(var(${COLOR.ACCENT_RGB}), 0.15);
     border-color: transparent;
   }
-`;
+`
 
 export const CheckDot = styled.div`
   width: 8px;
@@ -60,7 +60,7 @@ export const CheckDot = styled.div`
   &[data-checked] {
     background: var(${COLOR.BG});
   }
-`;
+`
 
 export const Circle = styled.div`
   ${commonIndicatorStyles};
@@ -80,7 +80,7 @@ export const Circle = styled.div`
     background: var(${COLOR.ACCENT});
     border-color: transparent;
   }
-`;
+`
 
 export const SwitchDot = styled.div`
   position: absolute;
@@ -97,7 +97,7 @@ export const SwitchDot = styled.div`
   &[data-checked] {
     left: 18px;
   }
-`;
+`
 
 export const Switch = styled.div`
   ${commonIndicatorStyles};
@@ -118,7 +118,7 @@ export const Switch = styled.div`
   &[data-checked] {
     background: var(${COLOR.ACCENT});
   }
-`;
+`
 
 export const Label = styled.div`
   flex-shrink: 1;
@@ -133,7 +133,7 @@ export const Label = styled.div`
   &[data-is-left] {
     margin: 0 8px 0 0;
   }
-`;
+`
 
 export const Control = styled.label`
   display: flex;
@@ -209,7 +209,7 @@ export const Control = styled.label`
       background: rgba(var(${COLOR.ACCENT_RGB}), 0.15);
     }
   }
-`;
+`
 
 export const InputControl = styled.input`
   position: absolute;
@@ -234,7 +234,7 @@ export const InputControl = styled.input`
       color: var(${COLOR.ACCENT});
     }
   }
-`;
+`
 
 export const IconWrapper = styled.div`
   display: flex;
@@ -245,10 +245,10 @@ export const IconWrapper = styled.div`
 
     fill: var(${COLOR.PRIMARY_MEDIUM});
   }
-`;
+`
 
 export const HelperText = styled.div`
   padding-left: 36px;
   ${TEXT.SMALL};
   color: var(${COLOR.PRIMARY_MEDIUM});
-`;
+`

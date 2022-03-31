@@ -1,6 +1,6 @@
-import { css } from '@linaria/core';
+import { css } from '@linaria/core'
 
-import { TRANSITION, SHADOW, COLOR } from 'ui/vars';
+import { TRANSITION, SHADOW, COLOR } from 'ui/vars'
 
 export default css`
   ${COLOR.ACCENT}: #EB7E44;
@@ -52,4 +52,4 @@ export default css`
   ${SHADOW.MEDIUM}: 0px 6px 18px rgba(36, 48, 79, 0.15);
 
   ${TRANSITION.NORMAL}: 0.2s ease;
-`;
+`

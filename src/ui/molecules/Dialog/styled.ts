@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, SHADOW } from 'ui/vars';
+import { COLOR, SHADOW } from 'ui/vars'
 
 export const Wrapper = styled.div`
   position: relative;
@@ -12,4 +12,4 @@ export const Wrapper = styled.div`
   background: var(${COLOR.BG});
   box-shadow: var(${SHADOW.MEDIUM});
   border-radius: 5px;
-`;
+`

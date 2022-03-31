@@ -1,9 +1,9 @@
-import { css } from '@linaria/core';
+import { css } from '@linaria/core'
 
-import { modalOpenClassName } from 'ui/molecules/Modal/Modal';
-import { TEXT, COLOR } from 'ui/vars';
+import { modalOpenClassName } from 'ui/molecules/Modal/Modal'
+import { TEXT, COLOR } from 'ui/vars'
 
-import toastify from './vendor/toastify';
+import toastify from './vendor/toastify'
 
 export default css`
   :global() {
@@ -54,4 +54,4 @@ export default css`
       text-decoration: none;
     }
   }
-`;
+`

@@ -4,9 +4,9 @@ const start = () => {
     .then(res => res.json())
     .then(data => {
       // @ts-ignore
-      window.runtimeConfig = data;
+      window.runtimeConfig = data
     })
-    .then(() => import('./bootstrap'));
-};
+    .then(() => import('./bootstrap'))
+}
 
-start();
+start()

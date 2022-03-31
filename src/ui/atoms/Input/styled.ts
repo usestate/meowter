@@ -1,15 +1,15 @@
-import { styled } from '@linaria/react';
-import TextareaAutosize from 'react-textarea-autosize';
+import { styled } from '@linaria/react'
+import TextareaAutosize from 'react-textarea-autosize'
 
-import { COLOR, TEXT } from 'ui/vars';
+import { COLOR, TEXT } from 'ui/vars'
 
-import _Hint from '../Hint/Hint';
+import _Hint from '../Hint/Hint'
 
 export const SIZES = {
   sm: 'sm',
   md: 'md',
-  lg: 'lg',
-};
+  lg: 'lg'
+}
 
 export const InputWrapper = styled.div`
   position: relative;
@@ -25,7 +25,7 @@ export const InputWrapper = styled.div`
   &[data-show-hint] {
     padding-bottom: 20px;
   }
-`;
+`
 
 export const GroupControl = styled.div`
   position: relative;
@@ -34,7 +34,7 @@ export const GroupControl = styled.div`
   padding: 0 20px;
 
   border: 1px solid rgba(var(${COLOR.SECONDARY_RGB}), 0.1);
-  border-radius: 1e+07px;
+  border-radius: 1e7px;
   background: var(${COLOR.BG});
   transition: 0.2s ease-in-out;
   transition-property: border, background;
@@ -106,7 +106,7 @@ export const GroupControl = styled.div`
     border-color: var(${COLOR.SECONDARY_LIGHT});
     background: var(${COLOR.SECONDARY_LIGHT});
   }
-`;
+`
 
 export const Hint = styled(_Hint)`
   position: absolute;
@@ -114,8 +114,8 @@ export const Hint = styled(_Hint)`
   bottom: 40px;
   left: 25=0px;
   padding: 0 2px;
-  background: #FFF;
-`;
+  background: #fff;
+`
 
 const controlStyle = `
   padding: 0;
@@ -153,11 +153,11 @@ const controlStyle = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-`;
+`
 
 export const InputControl = styled.input`
   ${controlStyle};
-`;
+`
 
 export const TextareaControl = styled(TextareaAutosize)`
   ${controlStyle};
@@ -169,7 +169,7 @@ export const TextareaControl = styled(TextareaAutosize)`
   white-space: normal;
   overflow: auto;
   resize: none;
-`;
+`
 
 export const RightActions = styled.div`
   display: flex;
@@ -177,7 +177,7 @@ export const RightActions = styled.div`
   margin-left: auto;
   height: 100%;
   flex-shrink: 0;
-`;
+`
 
 export const Label = styled.p`
   display: block;
@@ -192,4 +192,4 @@ export const Label = styled.p`
   ${TEXT.SMALL_MEDIUM};
 
   color: var(${COLOR.TEXT});
-`;
+`

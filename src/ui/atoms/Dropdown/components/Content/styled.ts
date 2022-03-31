@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, SHADOW, TRANSITION } from 'ui/vars';
+import { COLOR, SHADOW, TRANSITION } from 'ui/vars'
 
 export const Wrapper = styled.div<{ maxWidth?: number }>`
   transition: opacity var(${TRANSITION.NORMAL});
@@ -18,7 +18,7 @@ export const Wrapper = styled.div<{ maxWidth?: number }>`
   &[data-out-of-boundaries] {
     opacity: 0 !important;
   }
-`;
+`
 
 export const Container = styled.div`
   position: relative;
@@ -28,4 +28,4 @@ export const Container = styled.div`
   background: var(${COLOR.BG});
 
   z-index: 1;
-`;
+`

@@ -1,14 +1,14 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, TEXT } from 'ui/vars';
+import { COLOR, TEXT } from 'ui/vars'
 
-import InteractiveIcon from '../InteractiveIcon/InteractiveIcon';
+import InteractiveIcon from '../InteractiveIcon/InteractiveIcon'
 
 export const VARIANTS = {
   success: 'success',
   alert: 'alert',
-  error: 'error',
-};
+  error: 'error'
+}
 
 export const Wrapper = styled.div`
   display: flex;
@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
   &[data-variant='${VARIANTS.error}'] {
     background: var(${COLOR.ERROR});
   }
-`;
+`
 
 export const CloseIcon = styled(InteractiveIcon)`
   margin-left: auto;
@@ -45,19 +45,19 @@ export const CloseIcon = styled(InteractiveIcon)`
       fill: var(${COLOR.BG});
     }
   }
-`;
+`
 
 export const Text = styled.div`
   margin-right: 8px;
-`;
+`
 
 export const Title = styled.div`
   ${TEXT.MEDIUM};
   word-break: break-word;
-`;
+`
 
 export const Msg = styled.div`
   margin-top: 8px;
 
   ${TEXT.SMALL_MEDIUM};
-`;
+`

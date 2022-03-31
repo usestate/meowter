@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
 export const Wrapper = styled.div<{ offset: number }>`
   display: inline-flex;
@@ -20,4 +20,4 @@ export const Wrapper = styled.div<{ offset: number }>`
       }
     }
   }
-`;
+`

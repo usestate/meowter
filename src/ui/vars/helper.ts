@@ -3,8 +3,8 @@ const WITHOUT_OUTLINE = `
     &:focus {
        box-shadow: none;
      }
-  `;
+  `
 
 export default {
-  WITHOUT_OUTLINE,
-};
+  WITHOUT_OUTLINE
+}

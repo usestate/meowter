@@ -1,14 +1,14 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, TEXT } from 'ui/vars';
+import { COLOR, TEXT } from 'ui/vars'
 
 export const VARIANTS = {
   accent: 'accent',
   alert: 'alert',
   error: 'error',
   secondary: 'secondary',
-  success: 'success',
-};
+  success: 'success'
+}
 
 export const Wrapper = styled.div`
   display: inline-flex;
@@ -41,4 +41,4 @@ export const Wrapper = styled.div`
   &[data-variant='${VARIANTS.success}'] {
     background: var(${COLOR.SUCCESS_PRIMARY});
   }
-`;
+`

@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, TEXT } from 'ui/vars';
+import { COLOR, TEXT } from 'ui/vars'
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   background: var(${COLOR.BG});
-`;
+`
 
 export const Content = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const Content = styled.div`
 
   background: var(${COLOR.BG});
   border-radius: 40px;
-`;
+`
 
 export const Actions = styled.div`
   display: flex;
@@ -38,7 +38,7 @@ export const Actions = styled.div`
   a {
     text-decoration: none;
   }
-`;
+`
 
 export const Title = styled.h1`
   margin: 40px 0 30px;
@@ -46,10 +46,10 @@ export const Title = styled.h1`
   color: var(${COLOR.TEXT});
   ${TEXT.H1};
   text-align: center;
-`;
+`
 
 export const Msg = styled.p`
   color: var(${COLOR.SECONDARY});
   ${TEXT.H2};
   text-align: center;
-`;
+`

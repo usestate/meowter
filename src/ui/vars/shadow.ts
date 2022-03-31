@@ -1,4 +1,4 @@
 export default {
   LIGHT: '--shadow-light',
-  MEDIUM: '--shadow-medium',
-};
+  MEDIUM: '--shadow-medium'
+}

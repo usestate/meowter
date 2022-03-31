@@ -1,12 +1,12 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, TEXT } from 'ui/vars';
+import { COLOR, TEXT } from 'ui/vars'
 
 export const VARIANTS = {
   normal: 'normal',
   alert: 'alert',
-  error: 'error',
-};
+  error: 'error'
+}
 
 export const Wrapper = styled.div<{ timeout: number }>`
   pointer-events: none;
@@ -38,7 +38,7 @@ export const Wrapper = styled.div<{ timeout: number }>`
     transition: ${p => p.timeout}ms ease-in;
     transition-property: opacity, transform;
   }
-`;
+`
 
 export const Text = styled.div`
   ${TEXT.SMALL};
@@ -62,6 +62,6 @@ export const Text = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
+
   font-size: 12px;
-`;
+`

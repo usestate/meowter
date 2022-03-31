@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { MEDIA, TEXT } from 'ui/vars';
+import { MEDIA, TEXT } from 'ui/vars'
 
 export const Wrapper = styled.div`
   padding: 25px 10px;
@@ -27,4 +27,4 @@ export const Wrapper = styled.div`
       padding: 0;
     }
   }
-`;
+`

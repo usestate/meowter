@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, MEDIA, TEXT } from 'ui/vars';
+import { COLOR, MEDIA, TEXT } from 'ui/vars'
 
 export const Wrapper = styled.div`
   position: relative;
@@ -19,9 +19,9 @@ export const Wrapper = styled.div`
     padding: 0 !important;
     min-height: 0;
   }
-`;
+`
 
 export const Title = styled.div`
   ${TEXT.H1};
   color: var(${COLOR.TEXT});
-`;
+`

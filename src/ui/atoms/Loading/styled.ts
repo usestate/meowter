@@ -1,6 +1,6 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, Z_INDEX } from 'ui/vars';
+import { COLOR, Z_INDEX } from 'ui/vars'
 
 export const Container = styled.div<{ size: number }>`
   position: relative;
@@ -21,11 +21,11 @@ export const Container = styled.div<{ size: number }>`
 
     background: rgba(var(${COLOR.BG}), 0.5);
   }
-`;
+`
 
 export const Text = styled.p`
   color: var(${COLOR.TEXT}});
-`;
+`
 
 export const Circular = styled.svg<{ size: number }>`
   width: ${p => p.size}px;
@@ -34,7 +34,7 @@ export const Circular = styled.svg<{ size: number }>`
   stroke-linecap: round;
   stroke-width: 4;
   fill: none;
-`;
+`
 
 export const Circle = styled.circle`
   stroke: var(${COLOR.ACCENT});
@@ -61,4 +61,4 @@ export const Circle = styled.circle`
       transform: rotate(450deg);
     }
   }
-`;
+`

@@ -1,37 +1,37 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-import { COLOR, TRANSITION, TEXT } from 'ui/vars';
+import { COLOR, TRANSITION, TEXT } from 'ui/vars'
 
 export const VARIANTS = {
   primary: 'primary',
   secondary: 'secondary',
   danger: 'danger',
-  inline: 'inline',
-};
+  inline: 'inline'
+}
 
 export const SIZES = {
   sm: 'sm',
-  md: 'md',
-};
+  md: 'md'
+}
 
 const hoverStyles = `
   background: var(${COLOR.ACCENT_DARK});
   color: var(${COLOR.BG});
   border-color: transparent;
-`;
+`
 
 const activeStyles = `
   background: var(${COLOR.ACCENT_ACTIVE});
   color: var(${COLOR.BG});
   border-color: transparent;
-`;
+`
 
 const disabledStyles = `
   background: rgba(var(${COLOR.ACCENT_RGB}), 0.3);
   color: var(${COLOR.BG});
   border-color: transparent;
   cursor: not-allowed;
-`;
+`
 
 const primary = `
   background: var(${COLOR.ACCENT});
@@ -50,7 +50,7 @@ const primary = `
   &:disabled {
     ${disabledStyles};
   }
-`;
+`
 
 const secondary = `
   background: transparent;
@@ -69,7 +69,7 @@ const secondary = `
   &:disabled {
     ${disabledStyles};
   }
-`;
+`
 
 const danger = `
   background: var(${COLOR.ERROR});
@@ -90,7 +90,7 @@ const danger = `
   &:disabled {
     ${disabledStyles};
   }
-`;
+`
 
 const inline = `
   padding: 0;
@@ -112,7 +112,7 @@ const inline = `
     color: var(${COLOR.SECONDARY});
     cursor: not-allowed;
   }
-`;
+`
 
 export const IconWrapper = styled.div`
   position: relative;
@@ -133,7 +133,7 @@ export const IconWrapper = styled.div`
   svg {
     fill: currentColor;
   }
-`;
+`
 
 export const Wrapper = styled.button`
   position: relative;
@@ -146,7 +146,7 @@ export const Wrapper = styled.button`
 
   border: none;
   background: transparent;
-  border-radius: 1e+07px;
+  border-radius: 1e7px;
   box-sizing: border-box;
   line-height: normal;
   outline: none;
@@ -180,7 +180,7 @@ export const Wrapper = styled.button`
     ${secondary};
     ${TEXT.NORMAL};
   }
-`;
+`
 
 export const Loader = styled.div`
   position: absolute;
@@ -194,4 +194,4 @@ export const Loader = styled.div`
   &[data-show] {
     display: flex;
   }
-`;
+`

@@ -4,13 +4,13 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   extends: [
     '@atamore/eslint-config-atamore',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
+    'prettier/@typescript-eslint'
   ],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
@@ -24,6 +24,6 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-empty-function': 0,
-    '@typescript-eslint/no-use-before-define': ['error'],
-  },
-};
+    '@typescript-eslint/no-use-before-define': ['error']
+  }
+}

@@ -42,5 +42,5 @@ export default {
   ERROR_LIGHT_RGB: '--color-error-light-rgb',
 
   ALERT_PRIMARY: '--color-alert-primary',
-  ALERT_PRIMARY_RGB: '--color-alert-primary-rgb',
-};
+  ALERT_PRIMARY_RGB: '--color-alert-primary-rgb'
+}

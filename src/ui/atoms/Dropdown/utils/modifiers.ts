@@ -1,8 +1,8 @@
 interface FnProps {
   state: {
-    styles: { popper: { minWidth: number; maxWidth: number } };
-    rects: { reference: { width: number } };
-  };
+    styles: { popper: { minWidth: number; maxWidth: number } }
+    rects: { reference: { width: number } }
+  }
 }
 
 const modifiers = [
@@ -14,15 +14,15 @@ const modifiers = [
       const {
         state: {
           rects: {
-            reference: { width },
-          },
-        },
-      } = data;
+            reference: { width }
+          }
+        }
+      } = data
 
       // eslint-disable-next-line
-      data.state.styles.popper.minWidth = width;
-    },
-  },
-];
+      data.state.styles.popper.minWidth = width
+    }
+  }
+]
 
-export default modifiers;
+export default modifiers

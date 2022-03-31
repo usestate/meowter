@@ -1,9 +1,9 @@
-import { styled } from '@linaria/react';
+import { styled } from '@linaria/react'
 
-const offset = 10;
+const offset = 10
 
-export const animationTimeout = 400;
-export const transitionClassName = 'dropdown';
+export const animationTimeout = 400
+export const transitionClassName = 'dropdown'
 
 export const Wrapper = styled.div<{ zIndex: number }>`
   z-index: ${p => p.zIndex};
@@ -81,4 +81,4 @@ export const Wrapper = styled.div<{ zIndex: number }>`
       transform: translate3d(-${offset}px, 0, 0);
     }
   }
-`;
+`
