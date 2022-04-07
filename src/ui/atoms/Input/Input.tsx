@@ -102,7 +102,6 @@ const Input: React.FC<InputProps> = React.forwardRef<HTMLElement, InputProps>(
     const textarea = type === TYPES.textarea
 
     // TODO: set correct type
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const Control: any = React.useMemo(
       () => (textarea ? TextareaControl : InputControl),
       [textarea]

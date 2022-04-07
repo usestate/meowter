@@ -19,7 +19,6 @@ const modifiers = [
         }
       } = data
 
-      // eslint-disable-next-line
       data.state.styles.popper.minWidth = width
     }
   }

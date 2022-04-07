@@ -52,7 +52,7 @@ export const LocalizationProvider: React.FC<LocalizationProviderProps> = props =
 
   React.useEffect(() => {
     changeLanguage(language)
-  }, []) // eslint-disable-line
+  }, [])
 
   return language ? (
     <LocalizationContext.Provider

@@ -1,6 +1,5 @@
 import * as React from 'react'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default (...refs: any[]): React.MutableRefObject<any> => {
   const targetRef = React.useRef()
 

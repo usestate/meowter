@@ -17,12 +17,11 @@ class ErrorBoundary extends React.Component<unknown, ErrorBoundaryState> {
   }
 
   render() {
-    // eslint-disable-next-line
     if (this.state.hasError) {
       return <ClientError />
     }
 
-    return this.props.children // eslint-disable-line
+    return this.props.children
   }
 }
 
