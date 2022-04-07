@@ -1,7 +1,9 @@
 import { FC } from 'react'
 
+import * as S from './styled'
+
 interface Props {}
 
 export const Content: FC<Props> = ({ children }) => {
-  return <main>{children}</main>
+  return <S.Container>{children}</S.Container>
 }

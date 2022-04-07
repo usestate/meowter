@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["webworker", "DOM"],
     "paths": {
+      "constants/*": ["constants/*"],
       "assets/*": ["assets/*"],
       "features/*": ["components/*"],
       "core/*": ["core/*"],

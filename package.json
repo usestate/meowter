@@ -11,7 +11,6 @@
     "build": "cross-env NODE_ENV=production webpack",
     "locale:extract": "cross-env NODE_ENV=locale lingui extract",
     "locale:compile": "lingui compile",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "beautify": "prettier --write **/*.{ts,tsx,js,css,html}"
   },
   "dependencies": {
@@ -47,7 +46,6 @@
     "utility-types": "^3.10.0"
   },
   "devDependencies": {
-    "@atamore/eslint-config-atamore": "^1.0.0",
     "@babel/core": "^7.12.3",
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.1",
@@ -65,8 +63,6 @@
     "@types/react-transition-group": "^4.4.0",
     "@types/webpack": "^4.41.24",
     "@types/webpack-env": "^1.15.3",
-    "@typescript-eslint/eslint-plugin": "^4.8.1",
-    "@typescript-eslint/parser": "^4.8.1",
     "babel-loader": "^8.2.1",
     "babel-plugin-macros": "^3.0.0",
     "babel-runtime": "^6.26.0",
@@ -75,15 +71,6 @@
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
     "dotenv": "^8.2.0",
-    "eslint": "^7.18.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "image-webpack-loader": "^7.0.1",

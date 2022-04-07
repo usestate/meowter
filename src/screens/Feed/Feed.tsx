@@ -8,7 +8,7 @@ import { Layout } from 'ui/templates/Layout'
 
 import { Wrapper, Content, Title, Description } from './styled'
 
-export const Feed = () => {
+export const FeedScreen = () => {
   const [isShown, setShown] = useState(false)
 
   const sayHi = () => alert.success({ title: 'Wow!', msg: 'You clicked!' })

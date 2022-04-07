@@ -1,8 +1,3 @@
-import { FC } from 'react'
+import { RouteObject } from 'react-router-dom'
 
-export interface CoreRoute {
-  path: string
-  element: FC
-  index?: boolean
-  children?: CoreRoute[]
-}
+export type CoreRoute = RouteObject

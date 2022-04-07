@@ -1,4 +1,4 @@
-import { Routes } from 'react-router-dom'
+import { useRoutes } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import { ErrorBoundary } from 'core/components'
@@ -6,14 +6,11 @@ import { ErrorBoundary } from 'core/components'
 import { GLOBALS, VARIABLES } from 'ui/theme'
 import { AlertProvider } from 'ui/alert'
 
-import { createRedirect, createRoutes } from 'lib/routing'
-
-import { ROUTES, routing } from './routing'
-
-const routes = createRoutes(routing)
-const redirect = createRedirect({ from: '*', to: ROUTES.feed })
+import { routing } from './routing'
 
 export const App = () => {
+  const routes = useRoutes(routing)
+
   return (
     <>
       <Helmet titleTemplate='%s / Meowter' defaultTitle='Meowter'>
@@ -23,11 +20,7 @@ export const App = () => {
       <ErrorBoundary>
         <AlertProvider />
 
-        <Routes>
-          {routes}
-
-          {redirect}
-        </Routes>
+        {routes}
       </ErrorBoundary>
     </>
   )
