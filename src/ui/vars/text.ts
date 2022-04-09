@@ -29,13 +29,25 @@ const MEDIUM = `
 const SMALL = `
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 17px;
 `
 
 const SMALL_MEDIUM = `
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 17px;
+`
+
+const THIN = `
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+`
+
+const THINK_MEDIUM = `
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
 `
 
 export interface textInterface {
@@ -47,6 +59,8 @@ export default {
   MEDIUM,
   SMALL,
   SMALL_MEDIUM,
+  THIN,
+  THINK_MEDIUM,
   H1,
   H2,
   MAIN_FONT_FAMILY

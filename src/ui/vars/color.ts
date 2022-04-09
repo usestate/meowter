@@ -11,6 +11,9 @@ export default {
   BG: '--color-bg',
   BG_RGB: '--color-bg-rgb',
 
+  PRIMARY_BG: '--color-primary-bg',
+  PRIMARY_BG_RGB: '--color-primary-bg-rgb',
+
   TEXT: '--color-text',
   TEXT_RGB: '--color-text-rgb',
 
