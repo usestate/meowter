@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Layout } from 'ui/templates/Layout'
+import { PageTemplate } from 'ui/templates/PageTemplate'
 
 import * as S from './styled'
 import { Post } from './Post'
@@ -38,22 +38,16 @@ export const UserScreen: FC = () => {
   const username = '@surganov'
 
   return (
-    <Layout>
+    <PageTemplate title={username}>
       <Helmet title={username} />
 
-      <Layout.Header title={username} />
+      <S.Profile />
 
-      <Layout.Content>
-        <S.Profile />
-
-        <S.Posts>
-          {posts.map(({ id, ...post }) => (
-            <Post key={id} {...post} />
-          ))}
-        </S.Posts>
-      </Layout.Content>
-
-      <Layout.Nav />
-    </Layout>
+      <S.Posts>
+        {posts.map(({ id, ...post }) => (
+          <Post key={id} {...post} />
+        ))}
+      </S.Posts>
+    </PageTemplate>
   )
 }

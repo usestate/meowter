@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { alert } from 'ui/alert'
 import { Button, Input } from 'ui/atoms'
 import { Modal } from 'ui/molecules'
-import { Layout } from 'ui/templates/Layout'
+import { PageTemplate } from 'ui/templates/PageTemplate'
 
 import { Wrapper, Content, Title, Description } from './styled'
 
@@ -15,26 +15,20 @@ export const FeedScreen = () => {
 
   return (
     <>
-      <Layout>
+      <PageTemplate title='Лента'>
         <Helmet title='Feed' />
 
-        <Layout.Header title='Лента' />
+        <Wrapper>
+          <Button variant='secondary' onClick={() => setShown(!isShown)}>
+            Modal!
+          </Button>
+          <Button disabled onClick={sayHi}>
+            No Click...
+          </Button>
 
-        <Layout.Content>
-          <Wrapper>
-            <Button variant='secondary' onClick={() => setShown(!isShown)}>
-              Modal!
-            </Button>
-            <Button disabled onClick={sayHi}>
-              No Click...
-            </Button>
-
-            <Input error value='hellogolyanov@go.g' helperText='Неправильный логин' />
-          </Wrapper>
-        </Layout.Content>
-
-        <Layout.Nav />
-      </Layout>
+          <Input error value='hellogolyanov@go.g' helperText='Неправильный логин' />
+        </Wrapper>
+      </PageTemplate>
 
       <Modal
         hideCloseBtn

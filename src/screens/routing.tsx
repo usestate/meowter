@@ -1,9 +1,10 @@
+import { Navigate } from 'react-router-dom'
+
 import { CoreRoute } from 'lib/routing'
 import { ROUTES } from 'constants/routes'
 
 import { FeedScreen } from './Feed'
 import { UserScreen } from './User'
-import { Navigate } from 'react-router-dom'
 
 export const routing: CoreRoute[] = [
   {
