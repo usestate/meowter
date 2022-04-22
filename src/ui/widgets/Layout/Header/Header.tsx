@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { OnBoarding } from 'features/OnBoarding'
+import { WelcomeModal } from 'feature/OnBoarding'
 
 import { ChevronLeft, CircleInfo as Info } from 'ui/icons/24'
 
@@ -28,7 +28,7 @@ export const Header: FC<Props> = ({ title, rightAction }) => {
         {rightAction ? rightAction : <S.Icon icon={Info} onClick={openModal} />}
       </S.Container>
 
-      <OnBoarding shown={shown} setShown={setShown} />
+      <WelcomeModal shown={shown} setShown={setShown} />
     </>
   )
 }

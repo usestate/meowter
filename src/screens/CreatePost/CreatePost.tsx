@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Meow } from 'features/Meow'
+import { Meow } from 'feature/Meow'
 
 import { PageTemplate } from 'ui/templates'
 import { Check } from 'ui/icons/24'
