@@ -9,6 +9,9 @@ export const Container = styled.nav`
 
   display: flex;
   justify-content: space-between;
+  justify-self: flex-end;
+
+  width: 100%;
 
   padding: 14px 30px 15px;
 

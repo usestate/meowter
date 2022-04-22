@@ -6,6 +6,7 @@ import { ROUTES } from 'constants/routes'
 import { FeedScreen } from './Feed'
 import { UserScreen } from './User'
 import { CommentsScreen } from './Comments'
+import { CreatePostScreen } from './CreatePost'
 
 export const routing: CoreRoute[] = [
   {
@@ -20,7 +21,10 @@ export const routing: CoreRoute[] = [
     path: ROUTES.comments,
     element: <CommentsScreen />
   },
-
+  {
+    path: ROUTES.createPost,
+    element: <CreatePostScreen />
+  },
   {
     path: ROUTES.notResolved,
     element: <Navigate to={ROUTES.feed} />

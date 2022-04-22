@@ -46,6 +46,18 @@ export const GroupControl = styled.div`
     cursor: text;
   }
 
+  &[data-textarea] {
+    border: 0;
+    padding: 0;
+    background: var(${COLOR.PRIMARY_BG});
+
+    textarea {
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+
   &[data-size='${SIZES.sm}'] {
     min-height: auto;
     height: 32px;
@@ -71,8 +83,11 @@ export const GroupControl = styled.div`
     }
 
     &[data-textarea] {
+      display: flex;
+      align-items: flex-start;
+
       min-height: 40px;
-      height: auto;
+      height: 100%;
     }
   }
 
@@ -95,6 +110,11 @@ export const GroupControl = styled.div`
     border-color: var(${COLOR.ACCENT});
     background: var(${COLOR.BG});
     cursor: text;
+
+    &[data-textarea] {
+      border: 0;
+      background: var(${COLOR.PRIMARY_BG});
+    }
   }
 
   &[data-error] {

@@ -1,16 +1,16 @@
 import { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { InteractiveIcon } from 'ui/atoms'
-import { ChevronLeft, Notification } from 'ui/icons/24'
+import { ChevronLeft, Notification, Check } from 'ui/icons/24'
 
 import * as S from './styled'
 
 interface Props {
   title: string
+  isMeow: boolean
 }
 
-export const Header: FC<Props> = ({ title }) => {
+export const Header: FC<Props> = ({ title, isMeow }) => {
   const navigation = useNavigate()
 
   const handleGoBack = () => {
@@ -19,9 +19,9 @@ export const Header: FC<Props> = ({ title }) => {
 
   return (
     <S.Container>
-      <S.BackIcon icon={ChevronLeft} onClick={handleGoBack} />
+      <S.Icon icon={ChevronLeft} onClick={handleGoBack} />
       <S.Title>{title}</S.Title>
-      <InteractiveIcon icon={Notification} />
+      {isMeow ? <S.MeowIcon icon={Check} /> : <S.Icon icon={Notification} />}
     </S.Container>
   )
 }

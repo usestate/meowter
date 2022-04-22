@@ -3,12 +3,13 @@ import { Layout } from 'ui/widgets/Layout'
 
 interface Props {
   title: string
+  isMeow: boolean
 }
 
-const PageTemplate: FC<Props> = ({ children, title }) => {
+const PageTemplate: FC<Props> = ({ children, title, isMeow }) => {
   return (
     <Layout>
-      <Layout.Header title={title} />
+      <Layout.Header title={title} isMeow={isMeow} />
 
       <Layout.Content>{children}</Layout.Content>
 
