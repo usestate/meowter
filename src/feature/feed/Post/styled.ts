@@ -10,36 +10,10 @@ export const Container = styled.div`
   background-color: var(${COLOR.BG});
 `
 
-export const FullName = styled.p`
-  ${TEXT.SMALL_MEDIUM};
-
-  color: var(${COLOR.TEXT});
-`
-
-export const Header = styled.div`
-  display: flex;
-
-  align-items: center;
-`
-
-export const Time = styled.p`
-  ${TEXT.THIN};
-
-  color: rgba(var(${COLOR.TEXT_RGB}), 0.5);
-`
-
 export const Text = styled.p`
   ${TEXT.SMALL};
 
   color: var(${COLOR.TEXT});
-`
-
-export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-
-  margin-left: 10px;
 `
 
 export const Content = styled.div`

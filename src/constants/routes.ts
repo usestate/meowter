@@ -1,6 +1,8 @@
 export enum ROUTES {
   feed = '/feed',
-  newPost = '/post/new',
+
+  createPost = '/meowt',
+  comments = '/:postId/comments',
 
   user = '/user',
 

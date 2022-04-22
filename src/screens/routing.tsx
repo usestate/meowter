@@ -5,6 +5,7 @@ import { ROUTES } from 'constants/routes'
 
 import { FeedScreen } from './Feed'
 import { UserScreen } from './User'
+import { CommentsScreen } from './Comments'
 
 export const routing: CoreRoute[] = [
   {
@@ -14,6 +15,10 @@ export const routing: CoreRoute[] = [
   {
     path: ROUTES.user,
     element: <UserScreen />
+  },
+  {
+    path: ROUTES.comments,
+    element: <CommentsScreen />
   },
 
   {

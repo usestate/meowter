@@ -1,7 +1,11 @@
 import { FC } from 'react'
+import { NavLink } from 'react-router-dom'
 
 import { Heart, Messages } from 'ui/icons/24'
-import { Avatar, InteractiveIcon } from 'ui/atoms'
+import { InteractiveIcon } from 'ui/atoms'
+import { stringifyRoute } from 'lib/routing'
+import { ROUTES } from 'constants/routes'
+import { User } from 'ui/molecules'
 
 import * as S from './styled'
 
@@ -16,20 +20,19 @@ interface Props {
 export const Post: FC<Props> = ({ name, comments, date, likes, message }) => {
   return (
     <S.Container>
-      <S.Header>
-        <Avatar size={35} title={name} />
-
-        <S.Info>
-          <S.FullName>{name}</S.FullName>
-          <S.Time>{date}</S.Time>
-        </S.Info>
-      </S.Header>
+      <User name={name} date={date} />
 
       <S.Content>
         <S.Text>{message}</S.Text>
 
         <S.Actions>
-          <InteractiveIcon icon={Messages} />
+          <NavLink
+            to={stringifyRoute(ROUTES.comments, {
+              postId: '4918482'
+            })}
+          >
+            <InteractiveIcon icon={Messages} />
+          </NavLink>
           <InteractiveIcon icon={Heart} />
         </S.Actions>
       </S.Content>

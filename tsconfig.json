@@ -14,7 +14,7 @@
     "paths": {
       "constants/*": ["constants/*"],
       "assets/*": ["assets/*"],
-      "features/*": ["components/*"],
+      "feature/*": ["feature/*"],
       "core/*": ["core/*"],
       "lib/*": ["lib/*"],
       "screens/*": ["screens/*"],

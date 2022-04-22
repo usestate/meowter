@@ -17,7 +17,7 @@ export const Nav: FC<Props> = () => {
       <S.Link to={ROUTES.user}>
         <InteractiveIcon icon={User} />
       </S.Link>
-      <S.Link to={ROUTES.newPost}>
+      <S.Link to={ROUTES.createPost}>
         <InteractiveIcon icon={Pencil} />
       </S.Link>
       <S.Link to={ROUTES.profile}>

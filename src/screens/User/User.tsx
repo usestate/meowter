@@ -2,9 +2,9 @@ import { FC } from 'react'
 import { Helmet } from 'react-helmet'
 
 import { PageTemplate } from 'ui/templates/PageTemplate'
+import { Post } from 'feature/feed'
 
 import * as S from './styled'
-import { Post } from './Post'
 
 const posts = [
   {
