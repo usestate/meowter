@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { toast, ToastContainer, Slide } from 'react-toastify'
+import { toast, ToastContainer, Bounce } from 'react-toastify'
 
 import { Snackbar } from '../atoms'
 
@@ -42,10 +42,11 @@ export const alert = {
 export const AlertProvider: React.FC<Record<string, unknown>> = props => (
   <ToastContainer
     autoClose={5000}
-    transition={Slide}
+    transition={Bounce}
     draggable={false}
     hideProgressBar
-    closeOnClick={false}
+    closeOnClick={true}
+    closeButton={false}
     position='bottom-right'
     {...props}
   />

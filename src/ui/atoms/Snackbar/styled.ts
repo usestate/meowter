@@ -12,18 +12,17 @@ export const VARIANTS = {
 
 export const Wrapper = styled.div`
   display: flex;
-  width: 300px;
   margin: 0;
   padding: 16px;
   border-radius: 4px;
   color: var(${COLOR.BG});
 
   &[data-variant='${VARIANTS.success}'] {
-    background: var(${COLOR.SUCCESS_PRIMARY});
+    background: var(${COLOR.ACCENT});
   }
 
   &[data-variant='${VARIANTS.alert}'] {
-    background: var(${COLOR.ALERT_PRIMARY});
+    background: var(${COLOR.ERROR_LIGHT});
   }
 
   &[data-variant='${VARIANTS.error}'] {
@@ -53,11 +52,12 @@ export const Text = styled.div`
 
 export const Title = styled.div`
   ${TEXT.MEDIUM};
+
   word-break: break-word;
 `
 
 export const Msg = styled.div`
   margin-top: 8px;
 
-  ${TEXT.SMALL_MEDIUM};
+  ${TEXT.SMALL};
 `

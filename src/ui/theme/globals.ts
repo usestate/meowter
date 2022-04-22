@@ -3,13 +3,19 @@ import { css } from '@linaria/core'
 import { modalOpenClassName } from 'ui/molecules/Modal/Modal'
 import { TEXT, COLOR } from 'ui/vars'
 
-import toastify from './vendor/toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export default css`
   :global() {
     @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
 
-    ${toastify};
+    .Toastify__toast-theme--light {
+      background: transparent;
+    }
+
+    .Toastify__toast {
+      box-shadow: none;
+    }
 
     .react-contextmenu-wrapper {
       display: flex;

@@ -18,11 +18,11 @@ export const IconContainer = styled.button<{ size?: number }>`
 
   &:hover,
   &:focus {
-    color: var(${COLOR.PRIMARY_LIGHT});
+    color: var(${COLOR.ACCENT});
   }
 
   &:active {
-    color: var(${COLOR.PRIMARY_LIGHT});
+    color: var(${COLOR.ACCENT});
   }
 
   &:disabled {

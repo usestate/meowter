@@ -7,27 +7,3 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `
-
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
-
-export const Title = styled.div`
-  margin: 0 0 10px 0;
-
-  ${TEXT.H2};
-
-  font-weight: 700;
-  text-align: center;
-`
-
-export const Description = styled.div`
-  color: rgba(var(${COLOR.TEXT_RGB}), 0.3);
-
-  ${TEXT.SMALL};
-
-  text-align: center;
-`

@@ -2,8 +2,9 @@ import { Helmet } from 'react-helmet'
 
 import { PageTemplate } from 'ui/templates'
 
+import { Post } from 'features/Post'
+
 import { Wrapper } from './styled'
-import { Post } from '../../features/Post'
 
 const posts = [
   {
@@ -34,10 +35,6 @@ const posts = [
 ]
 
 export const FeedScreen = () => {
-  // const [isShown, setShown] = useState(false)
-  //
-  // const sayHi = () => alert.success({ title: 'Wow!', msg: 'You clicked!' })
-
   return (
     <>
       <PageTemplate title='Лента'>
@@ -49,20 +46,6 @@ export const FeedScreen = () => {
           ))}
         </Wrapper>
       </PageTemplate>
-
-      {/*<Modal*/}
-      {/*  hideCloseBtn*/}
-      {/*  opened={isShown}*/}
-      {/*  onClose={() => setShown(false)}*/}
-      {/*  actions={[{ key: 1, title: 'Ага, я понял', onClick: () => setShown(false) }]}*/}
-      {/*>*/}
-      {/*  <Content>*/}
-      {/*    <Title>Как пользоваться приложением</Title>*/}
-      {/*    <Description>*/}
-      {/*      Выдели одно слово, и на его основе определится тема и составится лента*/}
-      {/*    </Description>*/}
-      {/*  </Content>*/}
-      {/*</Modal>*/}
     </>
   )
 }
