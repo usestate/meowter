@@ -25,13 +25,3 @@ export const Title = styled.h2`
 export const Icon = styled(InteractiveIcon)`
   color: var(${COLOR.ACCENT});
 `
-
-export const MeowIcon = styled(InteractiveIcon)`
-  svg {
-    fill: transparent;
-
-    path {
-      stroke: var(${COLOR.ACCENT});
-    }
-  }
-`

@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { Meow } from 'features/Meow'
 
 import { PageTemplate } from 'ui/templates'
+import { Check } from 'ui/icons/24'
 
 import * as S from './styled'
 
@@ -15,8 +16,8 @@ const post = {
 
 export const CreatePostScreen: FC = () => {
   return (
-    <PageTemplate title='Мяукнуть' isMeow>
-      <Helmet title='Сказать мяу' />
+    <PageTemplate title='Мяукнуть' rightAction={<S.Icon icon={Check} />}>
+      <Helmet title='Мяукнуть' />
 
       <S.Container>
         <Meow />

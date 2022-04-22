@@ -8,5 +8,9 @@ export enum ROUTES {
 
   profile = '/profile',
 
+  search = '/search',
+
+  actions = '/actions',
+
   notResolved = '*'
 }

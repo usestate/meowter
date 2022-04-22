@@ -1,6 +1,9 @@
 import { styled } from '@linaria/react'
-import { ProfilePreview } from './ProfilePreview'
+
 import { COLOR } from 'ui/vars'
+import { InteractiveIcon } from 'ui/atoms'
+
+import { ProfilePreview } from './ProfilePreview'
 
 export const Profile = styled(ProfilePreview)`
   background-color: var(${COLOR.BG});
@@ -15,4 +18,8 @@ export const Posts = styled.div`
   gap: 5px;
 
   margin-top: 5px;
+`
+
+export const Icon = styled(InteractiveIcon)`
+  color: var(${COLOR.ACCENT});
 `

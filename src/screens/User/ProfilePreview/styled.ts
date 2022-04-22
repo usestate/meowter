@@ -1,5 +1,6 @@
 import { styled } from '@linaria/react'
-import { TEXT } from 'ui/vars'
+import { COLOR, TEXT } from 'ui/vars'
+import { InteractiveIcon } from 'ui/atoms'
 
 export const Container = styled.div`
   display: flex;

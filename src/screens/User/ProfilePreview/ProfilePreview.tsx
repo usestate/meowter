@@ -1,13 +1,15 @@
 import { FC } from 'react'
 
-import * as S from './styled'
 import { Avatar, Button } from 'ui/atoms'
 
+import * as S from './styled'
+
 const user = {
-  fullName: 'Сергей Сурганов',
+  fullName: 'Валя Андреич',
   about: 'Грузчик в Pyatorochka LLC',
   subscribers: 1201,
-  subscriptions: 569
+  subscriptions: 569,
+  isCurrentUser: true
 }
 
 interface Props {
@@ -20,6 +22,7 @@ export const ProfilePreview: FC<Props> = ({ className }) => {
       <Avatar size={60} title={user.fullName} />
       <S.Title>{user.fullName}</S.Title>
       <S.About>{user.about}</S.About>
+
       <S.Statistics>
         <S.CountWrapper>
           <S.Count>{user.subscriptions}</S.Count>
@@ -32,9 +35,11 @@ export const ProfilePreview: FC<Props> = ({ className }) => {
         </S.CountWrapper>
       </S.Statistics>
 
-      <Button variant='secondary' size='sm'>
-        Подписаться
-      </Button>
+      {!user.isCurrentUser && (
+        <Button variant='secondary' size='sm'>
+          Подписаться
+        </Button>
+      )}
     </S.Container>
   )
 }

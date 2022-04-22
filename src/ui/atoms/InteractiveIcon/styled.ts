@@ -12,20 +12,21 @@ export const IconContainer = styled.button<{ size?: number }>`
   background: transparent;
   cursor: pointer;
   transition: var(${TRANSITION.NORMAL});
-  color: var(${COLOR.PRIMARY_MEDIUM});
+  color: var(${COLOR.SECONDARY});
+
   ${HELPER.WITHOUT_OUTLINE};
 
   &:hover,
   &:focus {
-    color: var(${COLOR.PRIMARY_DARK});
+    color: var(${COLOR.PRIMARY_LIGHT});
   }
 
   &:active {
-    color: var(${COLOR.PRIMARY_DARK});
+    color: var(${COLOR.PRIMARY_LIGHT});
   }
 
   &:disabled {
-    color: var(${COLOR.SECONDARY});
+    color: var(${COLOR.PRIMARY_LIGHT});
     cursor: not-allowed;
   }
 
