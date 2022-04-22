@@ -38,7 +38,7 @@ export const FeedScreen = () => {
   return (
     <>
       <PageTemplate title='Лента'>
-        <Helmet title='Feed' />
+        <Helmet title='Лента' />
 
         <Wrapper>
           {posts.map(({ id, ...post }) => (

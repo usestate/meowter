@@ -13,7 +13,7 @@ export const App = () => {
 
   return (
     <>
-      <Helmet titleTemplate='%s / Meowter' defaultTitle='Meowter'>
+      <Helmet titleTemplate='%s / Мяутер' defaultTitle='Мяутер'>
         <body className={`${GLOBALS} ${VARIABLES}`} />
       </Helmet>
 
