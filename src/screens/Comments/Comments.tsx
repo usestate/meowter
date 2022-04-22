@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { PageTemplate } from 'ui/templates/PageTemplate'
+import { PageTemplate } from 'ui/templates'
 import { User } from 'ui/molecules'
 
 import * as S from './styled'

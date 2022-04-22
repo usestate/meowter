@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 
 import { Post } from 'features/Post'
 
-import { PageTemplate } from 'ui/templates/PageTemplate'
+import { PageTemplate } from 'ui/templates'
 
 import * as S from './styled'
 

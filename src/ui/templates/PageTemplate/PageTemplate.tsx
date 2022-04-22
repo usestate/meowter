@@ -5,7 +5,7 @@ interface Props {
   title: string
 }
 
-export const PageTemplate: FC<Props> = ({ children, title }) => {
+const PageTemplate: FC<Props> = ({ children, title }) => {
   return (
     <Layout>
       <Layout.Header title={title} />
@@ -16,3 +16,5 @@ export const PageTemplate: FC<Props> = ({ children, title }) => {
     </Layout>
   )
 }
+
+export default PageTemplate

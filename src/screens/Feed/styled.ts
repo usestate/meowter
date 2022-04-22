@@ -6,19 +6,6 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  min-height: 1000px;
-
-  padding: 25px;
-
-  button {
-    width: 290px;
-    margin: 0 0 15px 0;
-  }
-
-  > div {
-    width: 290px;
-  }
 `
 
 export const Content = styled.div`
