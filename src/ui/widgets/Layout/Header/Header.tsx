@@ -1,10 +1,10 @@
 import { FC } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import { InteractiveIcon } from 'ui/atoms'
 import { ChevronLeft, Notification } from 'ui/icons/24'
 
 import * as S from './styled'
-import { useNavigate } from 'react-router-dom'
 
 interface Props {
   title: string

@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import { User, Pencil, Settings, Home } from 'ui/icons/24'
 import { InteractiveIcon } from 'ui/atoms'
+
 import { ROUTES } from 'constants/routes'
 
 import * as S from './styled'
