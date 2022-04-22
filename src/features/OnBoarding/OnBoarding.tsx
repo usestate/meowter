@@ -10,7 +10,7 @@ interface Props {
   setShown: (isShown: boolean) => void
 }
 
-export const HowToModal: FC<Props> = ({ shown, setShown }) => {
+export const OnBoarding: FC<Props> = ({ shown, setShown }) => {
   const sayHi = () => {
     alert.success({ title: 'Ого!', msg: 'Вы все поняли!' })
     setShown(false)
