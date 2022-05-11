@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet'
 
 import { PageTemplate } from 'ui/templates'
 
-import { Post } from 'feature/Post'
+import { Post } from 'features/Post'
 
 import { Wrapper } from './styled'
 

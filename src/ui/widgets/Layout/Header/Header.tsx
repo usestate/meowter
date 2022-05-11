@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { WelcomeModal } from 'feature/OnBoarding'
+import { WelcomeModal } from 'features/OnBoarding'
 
 import { ChevronLeft, CircleInfo as Info } from 'ui/icons/24'
 

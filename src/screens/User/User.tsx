@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Post } from 'feature/Post'
+import { Post } from 'features/Post'
 
 import { PageTemplate } from 'ui/templates'
 import { Settings } from 'ui/icons/24'
