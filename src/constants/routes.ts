@@ -12,5 +12,9 @@ export enum ROUTES {
 
   actions = '/actions',
 
-  notResolved = '*'
+  notFound = '*',
+  unauthorized = '/unauthorized',
+  error = '/error',
+
+  home = '/'
 }

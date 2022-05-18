@@ -31,6 +31,7 @@ export default css`
       box-shadow: none;
     }
 
+    #root,
     html {
       height: 100%;
     }

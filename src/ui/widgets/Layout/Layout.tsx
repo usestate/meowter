@@ -2,8 +2,10 @@ import { FC } from 'react'
 
 import * as S from './styled'
 
-interface Props {}
+interface Props {
+  huy: boolean
+}
 
-export const Layout: FC<Props> = ({ children }) => {
+export const Layout: FC<Props> = ({ huy, children }) => {
   return <S.Container>{children}</S.Container>
 }

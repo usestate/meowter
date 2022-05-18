@@ -1,7 +1,7 @@
 import { createEvent, createStore } from 'effector'
+import { createGate } from 'effector-react'
 
 import { Meow } from './types'
-import { createGate } from 'effector-react'
 
 const defaultStore: Meow = {
   text: ''

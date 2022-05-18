@@ -1,4 +1,5 @@
 import { styled } from '@linaria/react'
+
 import { COLOR, TEXT } from 'ui/vars'
 
 export const Container = styled.div`
