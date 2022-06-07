@@ -12,7 +12,7 @@
   ],
   "compileNamespace": "cjs",
   "fallbackLocales": {
-    "default": "en"
+    "default": "ru"
   },
   "format": "po",
   "locales": [
@@ -25,5 +25,5 @@
     "@lingui/core",
     "i18n"
   ],
-  "sourceLocale": "en"
+  "sourceLocale": "ru"
 }

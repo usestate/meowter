@@ -3,9 +3,12 @@ import { createEvent, createStore } from 'effector'
 import { User } from './types'
 
 const defaultStore: User = {
-  username: null,
+  tel: null,
+  email: null,
   login: null,
-  password: null
+  firstName: null,
+  lastName: null,
+  about: null
 }
 
 export const setUser = createEvent<User>()

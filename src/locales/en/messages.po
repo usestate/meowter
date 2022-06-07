@@ -1,70 +1,48 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2021-01-25 16:57+0300\n"
-"Mime-Version: 1.0\n"
+"POT-Creation-Date: 2022-06-07 17:36+0300\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: @ling@ui/cli\n"
+"X-Generator: @lingui/cli\n"
 "Language: en\n"
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Plural-Forms: \n"
 
-#: src/screens/Errors/components/ErrorPage/ErrorPage.tsx:32
+#: src/screens/Errors/Error.tsx:57
 msgid "error.btn.goToMain"
-msgstr "На главную"
+msgstr ""
 
-#: src/screens/Errors/components/ErrorPage/ErrorPage.tsx:41
+#: src/screens/Errors/Error.tsx:66
 msgid "error.btn.reloadPage"
-msgstr "Обновить страницу"
+msgstr ""
 
-#: src/screens/Errors/400/400.tsx:12
-msgid "error.msg.400"
-msgstr "Произошел неверный запрос"
+#: src/screens/Errors/Error.tsx:75
+msgid "error.btn.signin"
+msgstr ""
 
-#: src/screens/Errors/401/401.tsx:12
+#: src/screens/Errors/Error.tsx:84
+msgid "error.btn.signup"
+msgstr ""
+
+#: src/screens/Errors/atoms/401/401.tsx:14
 msgid "error.msg.401"
-msgstr "Ошибка аутентификации"
+msgstr ""
 
-#: src/screens/Errors/403/403.tsx:12
-msgid "error.msg.403"
-msgstr "Доступ запрещен"
-
-#: src/screens/Errors/404/404.tsx:12
+#: src/screens/Errors/atoms/404/404.tsx:14
 msgid "error.msg.404"
-msgstr "Страница не найдена"
+msgstr ""
 
-#: src/screens/Errors/500/500.tsx:12
-msgid "error.msg.500"
-msgstr "Произошла непредвиденная ошибка"
-
-#: src/screens/Errors/ClientError/ClientError.tsx:12
+#: src/screens/Errors/atoms/ClientError/ClientError.tsx:14
 msgid "error.msg.clientError"
-msgstr "Произошла непредвиденная ошибка"
+msgstr ""
 
-#: src/screens/Errors/400/400.tsx:8
-msgid "error.title.400"
-msgstr "Ошибка 400"
-
-#: src/screens/Errors/401/401.tsx:8
+#: src/screens/Errors/atoms/401/401.tsx:10
 msgid "error.title.401"
-msgstr "Ошибка 401"
+msgstr ""
 
-#: src/screens/Errors/403/403.tsx:8
-msgid "error.title.403"
-msgstr "Ошибка 403"
-
-#: src/screens/Errors/404/404.tsx:8
+#: src/screens/Errors/atoms/404/404.tsx:10
 msgid "error.title.404"
-msgstr "Ошибка 404"
+msgstr ""
 
-#: src/screens/Errors/500/500.tsx:8
-msgid "error.title.500"
-msgstr "Ошибка 500"
-
-#: src/screens/Errors/ClientError/ClientError.tsx:8
+#: src/screens/Errors/atoms/ClientError/ClientError.tsx:10
 msgid "error.title.clientError"
-msgstr "Ошибка интерфейса"
+msgstr ""
