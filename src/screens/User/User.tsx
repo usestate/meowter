@@ -1,7 +1,9 @@
 import { FC } from 'react'
 import { Helmet } from 'react-helmet'
+import { useStore } from 'effector-react'
 
 import { Post } from 'features/Post'
+import { $user } from 'features/Auth/model'
 
 import { PageTemplate } from 'ui/templates'
 import { Settings } from 'ui/icons/24'
@@ -36,12 +38,18 @@ const posts = [
   }
 ]
 
+const username = '@trplfr'
+const isCurrentUser = true
+
 export const UserScreen: FC = () => {
-  const username = '@trplfr'
-  const isCurrentUser = true
+  const user = useStore($user)
 
   return (
-    <PageTemplate title={username} rightAction={isCurrentUser ? <S.Icon icon={Settings} /> : null}>
+    <PageTemplate
+      isAllowed={!!user.login}
+      title={username}
+      rightAction={isCurrentUser ? <S.Icon icon={Settings} /> : null}
+    >
       <Helmet title={username} />
 
       <S.Profile />

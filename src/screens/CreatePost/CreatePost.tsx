@@ -1,7 +1,9 @@
 import { FC } from 'react'
 import { Helmet } from 'react-helmet'
+import { useStore } from 'effector-react'
 
 import { Meow } from 'features/Meow'
+import { $user } from 'features/Auth/model'
 
 import { PageTemplate } from 'ui/templates'
 import { Check } from 'ui/icons/24'
@@ -15,8 +17,10 @@ const post = {
 }
 
 export const CreatePostScreen: FC = () => {
+  const user = useStore($user)
+
   return (
-    <PageTemplate title='Мяукнуть' rightAction={<S.Icon icon={Check} />}>
+    <PageTemplate isAllowed={!!user.login} title='Мяукнуть' rightAction={<S.Icon icon={Check} />}>
       <Helmet title='Мяукнуть' />
 
       <S.Container>

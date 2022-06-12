@@ -1,8 +1,10 @@
 import { Helmet } from 'react-helmet'
+import { useStore } from 'effector-react'
 
 import { PageTemplate } from 'ui/templates'
 
 import { Post } from 'features/Post'
+import { $user } from 'features/Auth/model'
 
 import { Wrapper } from './styled'
 
@@ -35,17 +37,17 @@ const posts = [
 ]
 
 export const FeedScreen = () => {
-  return (
-    <>
-      <PageTemplate title='Лента'>
-        <Helmet title='Лента' />
+  const user = useStore($user)
 
-        <Wrapper>
-          {posts.map(({ id, ...post }) => (
-            <Post key={id} {...post} />
-          ))}
-        </Wrapper>
-      </PageTemplate>
-    </>
+  return (
+    <PageTemplate title='Лента' isAllowed={!!user.login}>
+      <Helmet title='Лента' />
+
+      <Wrapper>
+        {posts.map(({ id, ...post }) => (
+          <Post key={id} {...post} />
+        ))}
+      </Wrapper>
+    </PageTemplate>
   )
 }

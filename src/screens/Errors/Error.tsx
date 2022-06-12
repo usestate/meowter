@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import { Button } from 'ui/atoms'
+import { ROUTES } from 'constants/routes'
 
 import { Actions, Cat, Container, Description, Details, Heading } from './styled'
 
@@ -53,7 +54,7 @@ export const Error: FC<ErrorProps> = ({
         )}
         <Actions>
           {toMain && (
-            <Button type='button' onClick={() => navigate('/')}>
+            <Button type='button' onClick={() => navigate(ROUTES.home)}>
               {t({
                 id: 'error.btn.goToMain',
                 message: 'На главную'
@@ -71,7 +72,7 @@ export const Error: FC<ErrorProps> = ({
           )}
 
           {toLogin && (
-            <Button type='button' onClick={() => navigate('/signin')}>
+            <Button type='button' onClick={() => navigate(ROUTES.signin)}>
               {t({
                 id: 'error.btn.signin',
                 message: 'Войти'
@@ -80,7 +81,7 @@ export const Error: FC<ErrorProps> = ({
           )}
 
           {toRegistration && (
-            <Button type='button' onClick={() => navigate('/signup')}>
+            <Button type='button' onClick={() => navigate(ROUTES.signup)}>
               {t({
                 id: 'error.btn.signup',
                 message: 'Зарегистрироваться'

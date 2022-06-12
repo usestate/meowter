@@ -7,6 +7,8 @@ import { FeedScreen } from './Feed'
 import { UserScreen } from './User'
 import { CommentsScreen } from './Comments'
 import { CreatePostScreen } from './CreatePost'
+import { HelloScreen } from './Hello'
+
 import {
   Error404 as NotFoundScreen,
   Error401 as UnauthorizedScreen,
@@ -44,6 +46,18 @@ export const routing: CoreRoute[] = [
   },
   {
     path: ROUTES.home,
-    element: <Navigate to={ROUTES.feed} />
+    element: <Navigate to={ROUTES.hello} />
+  },
+  {
+    path: ROUTES.signin,
+    element: <Navigate to={ROUTES.hello} />
+  },
+  {
+    path: ROUTES.signup,
+    element: <Navigate to={ROUTES.hello} />
+  },
+  {
+    path: ROUTES.hello,
+    element: <HelloScreen />
   }
 ]

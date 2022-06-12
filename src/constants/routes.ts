@@ -16,5 +16,9 @@ export enum ROUTES {
   unauthorized = '/unauthorized',
   error = '/error',
 
+  hello = '/hello',
+  signin = '/signin',
+  signup = '/signup',
+
   home = '/'
 }
