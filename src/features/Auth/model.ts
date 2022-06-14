@@ -6,6 +6,7 @@ const defaultStore: User = {
   tel: null,
   email: null,
   login: null,
+  name: null,
   firstName: null,
   lastName: null,
   about: null

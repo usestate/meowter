@@ -1,6 +1,7 @@
 import * as React from 'react'
+import { MultipleFieldErrors } from 'react-hook-form'
 
-import { Lock as EyeHide, Unlock as EyeShow } from 'ui/icons/24'
+import { CatEyeLock as EyeHide, CatEyeUnlock as EyeShow } from 'ui/icons/24'
 
 import useCombinedRefs from 'ui/utils/hooks/useCombinedRefs'
 
@@ -35,7 +36,7 @@ export interface InputProps {
   disabled?: boolean
   autoFocus?: boolean
   noRightStopPropagation?: boolean
-  error?: boolean | string
+  error?: { type: string; message?: string; types: MultipleFieldErrors }
   type?: keyof typeof TYPES | string
   onChange?: (e: React.ChangeEvent) => void
   onFocus?: (e: React.FocusEvent) => void
@@ -176,7 +177,7 @@ const Input: React.FC<InputProps> = React.forwardRef<HTMLElement, InputProps>(
           {showHint && (
             <Hint
               status={error ? 'error' : 'normal'}
-              text={(typeof error === 'string' ? error : '') || helperText}
+              text={error?.message ?? helperText}
               disabled={disabled}
             />
           )}

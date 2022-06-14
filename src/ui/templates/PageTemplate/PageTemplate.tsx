@@ -4,25 +4,27 @@ import { Layout } from 'ui/widgets/Layout'
 import { ProtectedRoute } from 'lib/routing'
 
 interface Props {
-  title: string
+  className?: string
+  title?: string
   rightAction?: React.ReactNode
-  isActions?: boolean
+  isNav?: boolean
   isAllowed?: boolean
   redirectPath?: string
 }
 
 const PageTemplate: FC<Props> = ({
+  className,
   children,
   title,
   rightAction,
-  isActions = true,
-  isAllowed,
+  isNav = true,
+  isAllowed = true,
   redirectPath
 }) => {
   return (
     <ProtectedRoute isAllowed={isAllowed} redirectPath={redirectPath}>
-      <Layout>
-        {isActions ? (
+      <Layout className={className}>
+        {isNav ? (
           <>
             <Layout.Header title={title} rightAction={rightAction} />
 
@@ -32,7 +34,9 @@ const PageTemplate: FC<Props> = ({
           </>
         ) : (
           <>
-            <Layout.Content>{children}</Layout.Content>
+            <Layout.Header title={title} rightAction={rightAction} />
+
+            {children}
           </>
         )}
       </Layout>

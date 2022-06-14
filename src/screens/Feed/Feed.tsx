@@ -1,12 +1,15 @@
+import { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { useStore } from 'effector-react'
 
 import { PageTemplate } from 'ui/templates'
 
 import { Post } from 'features/Post'
+import { WelcomeModal } from 'features/OnBoarding'
 import { $user } from 'features/Auth/model'
 
-import { Wrapper } from './styled'
+import { Wrapper, Icon } from './styled'
+import { CircleInfo as Info } from 'ui/icons/24'
 
 const posts = [
   {
@@ -39,8 +42,16 @@ const posts = [
 export const FeedScreen = () => {
   const user = useStore($user)
 
+  const [shown, setShown] = useState(false)
+
+  const openModal = () => setShown(true)
+
   return (
-    <PageTemplate title='Лента' isAllowed={!!user.login}>
+    <PageTemplate
+      title='Лента'
+      isAllowed={!!user.login}
+      rightAction={<Icon icon={Info} onClick={openModal} />}
+    >
       <Helmet title='Лента' />
 
       <Wrapper>
@@ -48,6 +59,8 @@ export const FeedScreen = () => {
           <Post key={id} {...post} />
         ))}
       </Wrapper>
+
+      <WelcomeModal shown={shown} setShown={setShown} />
     </PageTemplate>
   )
 }

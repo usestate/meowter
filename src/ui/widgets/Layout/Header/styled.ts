@@ -25,3 +25,8 @@ export const Title = styled.h2`
 export const Icon = styled(InteractiveIcon)`
   color: var(${COLOR.ACCENT});
 `
+
+export const Blank = styled.div`
+  width: 24px;
+  height: 24px;
+`

@@ -4,6 +4,7 @@ import TextareaAutosize from 'react-textarea-autosize'
 import { COLOR, TEXT } from 'ui/vars'
 
 import _Hint from '../Hint/Hint'
+import { InteractiveIcon } from 'ui/atoms'
 
 export const SIZES = {
   sm: 'sm',
@@ -23,7 +24,7 @@ export const InputWrapper = styled.div`
   }
 
   &[data-show-hint] {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 `
 
@@ -132,7 +133,7 @@ export const Hint = styled(_Hint)`
   position: absolute;
   width: auto;
   bottom: 40px;
-  left: 25=0px;
+  left: 25px;
   padding: 0 2px;
   background: #fff;
 `

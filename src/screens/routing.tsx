@@ -8,6 +8,8 @@ import { UserScreen } from './User'
 import { CommentsScreen } from './Comments'
 import { CreatePostScreen } from './CreatePost'
 import { HelloScreen } from './Hello'
+import { SignInScreen } from './SignIn'
+import { SignUpScreen } from './SignUp'
 
 import {
   Error404 as NotFoundScreen,
@@ -50,11 +52,11 @@ export const routing: CoreRoute[] = [
   },
   {
     path: ROUTES.signin,
-    element: <Navigate to={ROUTES.hello} />
+    element: <SignInScreen />
   },
   {
     path: ROUTES.signup,
-    element: <Navigate to={ROUTES.hello} />
+    element: <SignUpScreen />
   },
   {
     path: ROUTES.hello,

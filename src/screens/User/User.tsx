@@ -38,7 +38,6 @@ const posts = [
   }
 ]
 
-const username = '@trplfr'
 const isCurrentUser = true
 
 export const UserScreen: FC = () => {
@@ -47,10 +46,10 @@ export const UserScreen: FC = () => {
   return (
     <PageTemplate
       isAllowed={!!user.login}
-      title={username}
+      title={`@${user.name}`}
       rightAction={isCurrentUser ? <S.Icon icon={Settings} /> : null}
     >
-      <Helmet title={username} />
+      <Helmet title={`@${user.name}`} />
 
       <S.Profile />
 

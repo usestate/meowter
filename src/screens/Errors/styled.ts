@@ -44,10 +44,14 @@ export const Actions = styled.div`
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 40px 0 20px;
+  padding: 20px 0 0;
 
   & > * {
-    margin: 0 10px 20px;
+    margin: 0 10px 0 0;
+
+    :last-child {
+      margin: 0;
+    }
   }
 
   a {
