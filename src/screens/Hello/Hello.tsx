@@ -20,7 +20,10 @@ export const HelloScreen = () => {
   return (
     <Screen>
       <Cat />
-      <Heading>Добро пожаловать</Heading>
+      <Heading>
+        Добро пожаловать
+        <br />в Мяутер
+      </Heading>
       <Description>
         Если вам хочется принять участие в обсуждении последних новостей, вместо того, чтобы
         работать

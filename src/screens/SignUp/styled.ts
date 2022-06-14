@@ -2,6 +2,7 @@ import { styled } from '@linaria/react'
 
 import { PageTemplate } from 'ui/templates'
 import { COLOR } from 'ui/vars'
+import { Button } from 'ui/atoms'
 
 export const Template = styled(PageTemplate)`
   width: 100%;
@@ -22,5 +23,13 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  padding: 0 15px 15vh;
+  padding: 0 15px 15px;
+
+  form {
+    margin: 10vh 0 0 0;
+  }
+`
+
+export const Enter = styled(Button)`
+  margin: auto 0 0;
 `

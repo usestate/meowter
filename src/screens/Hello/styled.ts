@@ -18,6 +18,8 @@ export const Screen = styled.div`
 export const Heading = styled.h1`
   margin: 0 0 10px;
 
+  text-align: center;
+
   ${TEXT.H1};
 `
 

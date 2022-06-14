@@ -6,7 +6,7 @@ import { ROUTES } from 'constants/routes'
 
 import { setUser } from 'features/Auth/model'
 
-import { Accept, Form, Description, Field, Heading } from '../styled'
+import { Accept, Form, Description, Field, Heading, Wrapper } from '../styled'
 
 import { registrationSchema as schema, REGISTRATION_FIELDS as FIELDS } from './schema'
 
@@ -15,14 +15,18 @@ export const Registration = () => {
 
   const {
     register,
+    watch,
     formState: { errors },
     handleSubmit
   } = useForm({
     resolver: yupResolver(schema)
   })
 
+  const { isEmail } = watch()
+
   const onSubmit = handleSubmit(data => {
-    setUser({ login: data.login, name: data.name })
+    setUser({ login: data.email || data.tel, name: data.name })
+    console.log(data)
     navigate(ROUTES.feed)
   })
 
@@ -37,11 +41,15 @@ export const Registration = () => {
         error={errors[FIELDS.PASSWORD]}
         {...register(FIELDS.PASSWORD)}
       />
-      <Field
-        placeholder='Почта или телефон'
-        error={errors[FIELDS.LOGIN]}
-        {...register(FIELDS.LOGIN)}
-      />
+      {isEmail ? (
+        <Field placeholder='Почта' error={errors[FIELDS.EMAIL]} {...register(FIELDS.EMAIL)} />
+      ) : (
+        <Field placeholder='Телефон' error={errors[FIELDS.TEL]} {...register(FIELDS.TEL)} />
+      )}
+      <Wrapper>
+        <input type='checkbox' {...register('isEmail')} />
+        {isEmail ? 'Использовать телефон' : 'Использовать электронную почту'}
+      </Wrapper>
       <Accept type='submit'>Далее</Accept>
     </Form>
   )

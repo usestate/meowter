@@ -44,7 +44,7 @@ const THIN = `
   line-height: 14px;
 `
 
-const THINK_MEDIUM = `
+const THIN_MEDIUM = `
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -60,7 +60,7 @@ export default {
   SMALL,
   SMALL_MEDIUM,
   THIN,
-  THINK_MEDIUM,
+  THIN_MEDIUM,
   H1,
   H2,
   MAIN_FONT_FAMILY

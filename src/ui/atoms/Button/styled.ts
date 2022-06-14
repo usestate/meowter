@@ -97,7 +97,7 @@ const inline = `
   height: auto;
 
   color: var(${COLOR.ACCENT});
-  ${TEXT.SMALL};
+  ${TEXT.THIN};
 
   &:hover,
   &:focus {
