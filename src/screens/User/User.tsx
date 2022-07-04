@@ -9,6 +9,8 @@ import { PageTemplate } from 'ui/templates'
 import { Settings } from 'ui/icons/24'
 
 import * as S from './styled'
+import { Link } from 'react-router-dom'
+import { ROUTES } from 'constants/routes'
 
 const posts = [
   {
@@ -47,7 +49,13 @@ export const UserScreen: FC = () => {
     <PageTemplate
       isAllowed={!!user.login}
       title={`@${user.name}`}
-      rightAction={isCurrentUser ? <S.Icon icon={Settings} /> : null}
+      rightAction={
+        isCurrentUser ? (
+          <Link to={ROUTES.profile}>
+            <S.Icon icon={Settings} />
+          </Link>
+        ) : null
+      }
     >
       <Helmet title={`@${user.name}`} />
 

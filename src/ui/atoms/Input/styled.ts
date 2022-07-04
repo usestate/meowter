@@ -4,7 +4,6 @@ import TextareaAutosize from 'react-textarea-autosize'
 import { COLOR, TEXT } from 'ui/vars'
 
 import _Hint from '../Hint/Hint'
-import { InteractiveIcon } from 'ui/atoms'
 
 export const SIZES = {
   sm: 'sm',
@@ -47,12 +46,18 @@ export const GroupControl = styled.div`
     cursor: text;
   }
 
-  &[data-textarea] {
+  &[data-empty-textarea] {
     border: 0;
     padding: 0;
     background: var(${COLOR.PRIMARY_BG});
+  }
+
+  &[data-textarea] {
+    border-radius: 25px;
 
     textarea {
+      min-height: 130px;
+
       &::placeholder {
         font-size: 16px;
       }
@@ -112,7 +117,7 @@ export const GroupControl = styled.div`
     background: var(${COLOR.BG});
     cursor: text;
 
-    &[data-textarea] {
+    &[data-empty-textarea] {
       border: 0;
       background: var(${COLOR.PRIMARY_BG});
     }

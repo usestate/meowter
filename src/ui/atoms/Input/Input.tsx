@@ -33,6 +33,7 @@ export interface InputProps {
   placeholder?: string
   required?: boolean
   showHint?: boolean
+  emptyTextarea?: boolean
   disabled?: boolean
   autoFocus?: boolean
   noRightStopPropagation?: boolean
@@ -54,6 +55,7 @@ const Input: React.FC<InputProps> = React.forwardRef<HTMLElement, InputProps>(
       error,
       label,
       helperText,
+      emptyTextarea = false,
       className,
       type = 'text',
       onChange,
@@ -126,6 +128,7 @@ const Input: React.FC<InputProps> = React.forwardRef<HTMLElement, InputProps>(
       <InputWrapper
         className={className}
         data-textarea={textarea ? true : undefined}
+        data-empty-textarea={textarea && emptyTextarea ? true : undefined}
         data-show-hint={showHint ? true : undefined}
       >
         {label && <Label>{labelText}</Label>}

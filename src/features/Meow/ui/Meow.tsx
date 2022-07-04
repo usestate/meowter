@@ -19,6 +19,7 @@ export const Meow = () => {
   return (
     <S.Wrapper>
       <Input
+        emptyTextarea
         type='textarea'
         placeholder='Расскажи, что сегодня случилось?'
         onChange={handleSetMeow}
